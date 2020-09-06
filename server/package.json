@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js ",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && babel -d build src -s && cp package.json yarn.lock build && cp .prod.env build/.env"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.1",
+    "koa": "^2.12.0",
+    "koa-accesslog": "^1.0.0",
+    "koa-joi-router": "^6.0.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "eslint": "^7.8.1",
+    "nodemon": "^2.0.4"
+  }
+}

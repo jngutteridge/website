@@ -1,0 +1,53 @@
+.badge-list .badge.twitter:before {
+  mask-image: url(/svg/badge-twitter.svg);
+}
+
+.badge-list .badge.github:before {
+  mask-image: url(/svg/badge-github.svg);
+}
+
+.badge-list .badge.linkedin:before {
+  mask-image: url(/svg/badge-linkedin.svg);
+}
+
+.badge-list .badge.email:before {
+  mask-image: url(/svg/badge-email.svg);
+}
+
+ul.badge-list .badge:before {
+  display: block;
+  content: '';
+  height: 3rem;
+  width: 3rem;
+  background-size: contain;
+  background: white no-repeat center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: background-color var(--duration-link-off);
+  margin: 0;
+}
+
+ul.badge-list .badge {
+  position: relative;
+  background-color: var(--color-alternative);
+  display: block;
+}
+
+ul.badge-list  {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 40rem;
+}
+
+ul.badge-list .badge:hover {
+ background: var(--color-alternative-hover) no-repeat center;
+ transition: background-color var(--duration-link-on);
+}
+
+.jng-website ul.badge-list li + li {
+  margin-left: .5rem;
+}

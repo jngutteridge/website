@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Slabo+27px&display=swap');
+
+html {
+  font-size: 100%;
+
+  --duration-link-on: 150ms;
+  --duration-link-off: 300ms;
+
+  --color-main: #8B1647;
+  --color-alternative: #4a7bb3;
+  --color-action-hover: #85457b;
+  --color-alternative-hover: #728caa;
+
+  --font-title: 'Slabo 27px', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+span.description {
+  display: none;
+}
+
+div.container {
+  padding: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+div.container.narrow {
+  max-width: 32rem;
+}
+
+a:link, a:visited {
+  color: var(--color-main);
+}
+
+a.action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+
+
+body {
+  background-color: white;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+  margin: 0;
+}
+
+p {margin-bottom: 1.15rem;}
+
+p:first-child {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: var(--font-title);
+  color: var(--color-main);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 1.802em;
+}
+
+h2 {font-size: 1.602em;}
+
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+small, .text_small {font-size: 0.889em;}
